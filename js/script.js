@@ -38,25 +38,25 @@ function getProgrammaRow(item, showWeekDay){
 	var retval = '';
 	retval += "<div class='mod_websiteprogramma-activiteit'>";
 	retval += "	<div class='mod_websiteprogramma-info'>";
-	retval += "	<div class='mod_websiteprogramma-info-wrapper'>";
-	retval += "		<div class='mod_websiteprogramma-info-date'>";
+	retval += "		<div class='mod_websiteprogramma-info-wrapper'>";
+	retval += "			<div class='mod_websiteprogramma-info-date'>";
 	retval += escapeHtml(new Date(item.date).toLocaleDateString(undefined, { weekday: showWeekDay ? 'short' : undefined, year: 'numeric', month: 'short', day: 'numeric' }));
-	retval += "		</div>";
+	retval += "			</div>";// -date
 	if(!!item.image_url){
 		retval += "		<div class='mod_websiteprogramma-info-img'>";
 		retval += "			<img src='"+escapeHtml(item.image_url)+"'  loading='lazy'  />";
-		retval += "		</div>";
+		retval += "		</div>";// -img
 	}
-	retval += "	</div>";
+	retval += "		</div>";// info-wrapper
+	retval += "	</div>";// info
 	retval += "	<div class='mod_websiteprogramma-omschrijving'>";
 	retval += "		<div class='mod_websiteprogramma-title'>"+escapeHtml(item.name)+"</div>";
 	var omschrijving = item.omschrijving || '';
 	if(omschrijving.replaceAll('<br>', '').replaceAll('<p>', '').replaceAll('</p>', '').trim() != ''){
 		retval += "		<div class='mod_websiteprogramma-toelichting'>"+omschrijving+"</div>";
 	}
-	retval += "	</div>";
-	retval += "	</div>";
-	retval += "</div>";
+	retval += "	</div>";// -omschrijving
+	retval += "</div>";// -activiteit
 
 	return retval;
 }
