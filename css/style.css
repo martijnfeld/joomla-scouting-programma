@@ -25,6 +25,10 @@
     display: flex;
     flex-direction: column-reverse;
 }
+.mod_websiteprogramma-info-wrapper {
+    position: sticky;
+    top: 100px;
+}
 .mod_websiteprogramma-info-date,
 .mod_websiteprogramma-title {
     margin-top: 1rem;
