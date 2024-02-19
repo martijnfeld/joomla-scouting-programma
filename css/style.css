@@ -1,0 +1,82 @@
+.mod_websiteprogramma-activiteit {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    transition: all 0.3s;
+    transition: box-shadow 0.3s;
+}
+
+.mod_websiteprogramma-activiteit:hover {
+    box-shadow: 4px 4px 6px 0px rgb(0 0 0 / 30%);
+}
+
+.mod_websiteprogramma-activiteiten {
+    display: grid;
+    grid-template-columns: 1;
+    /*   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); */
+    grid-gap: 20px;
+    align-items: stretch;
+}
+
+.mod_websiteprogramma-info {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.mod_websiteprogramma-info-date,
+.mod_websiteprogramma-title {
+    margin-top: 1rem;
+}
+.mod_websiteprogramma-info-date {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.mod_websiteprogramma-info img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    max-height: 60vh;
+}
+
+.mod_websiteprogramma-omschrijving .mod_websiteprogramma-toelichting {
+	word-break: break-word;
+}
+.mod_websiteprogramma-omschrijving .mod_websiteprogramma-toelichting > p:last-of-type {
+	margin-bottom: 0;
+}
+
+.mod_websiteprogramma-title {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+@media only screen and (min-width: 800px) {
+    .mod_websiteprogramma-info {
+        display: block;
+    }
+    .mod_websiteprogramma-info-date,
+    .mod_websiteprogramma-title {
+        margin-top: 0px;
+    }
+    .mod_websiteprogramma-activiteit {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mod_websiteprogramma-info {
+        width: 204px;
+        margin-right: 2rem;
+        flex-shrink: 0;
+    }
+    .mod_websiteprogramma-info-date {
+        text-align: right;
+
+        /* position: sticky;
+        top: 73px; */
+    }
+    .mod_websiteprogramma-info-img,
+	.mod_websiteprogramma-toelichting {
+		margin-top: 0.2em;
+	}
+}

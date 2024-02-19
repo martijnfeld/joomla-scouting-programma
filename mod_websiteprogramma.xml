@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>MOD_WEBSITEPROGRAMMA</name>
+    <author>martijnfeld.nl</author>
+    <version>1.2.0</version>
+    <creationDate>April 2021</creationDate>
+    <description>MOD_WEBSITEPROGRAMMA_XML_DESCRIPTION</description>
+    <files>
+        <filename>mod_websiteprogramma.xml</filename>
+        <filename module="mod_websiteprogramma">mod_websiteprogramma.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+				<filename>css/style.css</filename>
+				<filename>js/script.js</filename>
+    </files>
+    <languages folder="language">
+      <language tag="nl-NL">nl-NL/nl-NL.mod_websiteprogramma.ini</language>
+      <language tag="nl-NL">nl-NL/nl-NL.mod_websiteprogramma.sys.ini</language>
+      <language tag="en-GB">en-GB/en-GB.mod_websiteprogramma.ini</language>
+      <language tag="en-GB">en-GB/en-GB.mod_websiteprogramma.sys.ini</language>
+    </languages>
+    <config>
+      <fields name="params">
+        <fieldset name="basic">
+            <field name="json_url" type="string" label="MOD_WEBSITEPROGRAMMA_JSON_URL" />
+            <!-- <field name="afbeelding_kolom" type="checkbox" label="MOD_WEBSITEPROGRAMMA_IMAGE_COL" /> -->
+        </fieldset>
+      </fields>
+    </config>
+    <updateservers>
+      <server type="extension" name="GitHub">https://raw.githubusercontent.com/martijnfeld/joomla-scouting-websiteprogramma/master/manifest.xml</server>
+    </updateservers>
+</extension>
