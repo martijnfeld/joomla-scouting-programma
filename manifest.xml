@@ -3,9 +3,8 @@
 	<update>
 		<name>Programma</name>
 		<description>Programma</description>
-		<type>plugin</type>
+		<type>module</type>
 		<element>mod_websiteprogramma</element>
-		<type>package</type>
 		<version>1.3.1</version>
 		<client>site</client>
 		<infourl title="Programma">https://github.com/martijnfeld/joomla-scouting-websiteprogramma/releases/tag/v1.3.1</infourl>
@@ -17,9 +16,8 @@
 	<update>
 		<name>Programma</name>
 		<description>Programma</description>
-		<type>plugin</type>
+		<type>module</type>
 		<element>mod_websiteprogramma</element>
-		<type>package</type>
 		<version>1.3.2</version>
 		<client>site</client>
 		<infourl title="Programma">https://github.com/martijnfeld/joomla-scouting-websiteprogramma/releases/tag/v1.3.2</infourl>
@@ -31,14 +29,26 @@
 	<update>
 		<name>Programma</name>
 		<description>Programma</description>
-		<type>plugin</type>
+		<type>module</type>
 		<element>mod_websiteprogramma</element>
-		<type>package</type>
 		<version>1.3.3</version>
 		<client>site</client>
 		<infourl title="Programma">https://github.com/martijnfeld/joomla-scouting-websiteprogramma/releases/tag/v1.3.3</infourl>
 		<downloads>
 			<downloadurl type="full" format="zip">https://github.com/martijnfeld/joomla-scouting-websiteprogramma/archive/v1.3.3.zip</downloadurl>
+		</downloads>
+		<targetplatform name="joomla" version="3.[6789]|(10)" />
+	</update>
+	<update>
+		<name>Programma</name>
+		<description>Programma</description>
+		<type>module</type>
+		<element>mod_websiteprogramma</element>
+		<version>1.3.4</version>
+		<client>site</client>
+		<infourl title="Programma">https://github.com/martijnfeld/joomla-scouting-websiteprogramma/releases/tag/v1.3.4</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/martijnfeld/joomla-scouting-websiteprogramma/archive/v1.3.4.zip</downloadurl>
 		</downloads>
 		<targetplatform name="joomla" version="3.[6789]|(10)" />
 	</update>
