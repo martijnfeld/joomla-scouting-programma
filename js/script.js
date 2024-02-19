@@ -29,21 +29,6 @@ function mod_websiteprogramma_buildTable(id, url, afbeelding) {
 
 			programma.forEach(function (item) {
 				table.innerHTML += getProgrammaRow(item, showWeekDay);
-				// var row = tbody.insertRow();
-				// kolommen.forEach(function (col) {
-				// 	var cell = row.insertCell();
-				// 	var text = item[col.key];
-				// 	if(text && col.key == 'date'){
-				// 		text = new Date(text).toLocaleDateString(undefined, { dateStyle:'medium' })
-				// 	}
-				// 	if(col.key == 'omschrijving'){
-				// 		cell.innerHTML = text;
-				// 	}
-				// 	else{
-				// 		var textNode = document.createTextNode(text);
-				// 		cell.appendChild(textNode);
-				// 	}
-				// });
 			})
 		}
 	}).catch(err => {
@@ -69,7 +54,7 @@ function getProgrammaRow(item, showWeekDay){
 	retval += "	<div class='mod_websiteprogramma-info'>";
 	retval += "		<div class='mod_websiteprogramma-info-date'>";
 	// retval += escapeHtml(new Date(item.date).toLocaleDateString(undefined, { dateStyle:'medium' }));
-	retval += escapeHtml(new Date(item.date).toLocaleDateString(undefined, { weekday: showWeekDay ? 'short' : undefined, year: '2-digit', month: 'short', day: 'numeric' }));
+	retval += escapeHtml(new Date(item.date).toLocaleDateString(undefined, { weekday: showWeekDay ? 'short' : undefined, year: 'numeric', month: 'short', day: 'numeric' }));
 	retval += "		</div>";
 	if(!!item.image_url){
 		retval += "		<div class='mod_websiteprogramma-info-img'>";
