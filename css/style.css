@@ -37,6 +37,7 @@
     display: block;
     margin: auto;
     max-height: 30vh;
+    aspect-ratio: 1;
 }
 
 .mod_websiteprogramma-omschrijving .mod_websiteprogramma-toelichting {
