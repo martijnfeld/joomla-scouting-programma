@@ -85,7 +85,7 @@
 	}
 }
 
-.mod_websiteprogramma-activiteiten ~ h3 {
+*:has(> .mod_websiteprogramma-activiteiten) h3 {
     position: sticky;
     top: 72px;
     background: #fff;
