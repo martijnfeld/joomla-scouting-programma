@@ -20,11 +20,6 @@
     grid-gap: 20px;
     align-items: stretch;
 }
-
-.mod_websiteprogramma-info {
-    display: flex;
-    flex-direction: column-reverse;
-}
 .mod_websiteprogramma-info-wrapper {
     position: sticky;
     top: 130px;
