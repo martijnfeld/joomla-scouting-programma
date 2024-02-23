@@ -33,11 +33,12 @@
     font-weight: bold;
 }
 .mod_websiteprogramma-info img {
-    /* width: 100%; */
     display: block;
     margin: auto;
     max-height: 30vh;
     aspect-ratio: 1;
+    width: 30vh;
+    max-width: 100%;
 }
 
 .mod_websiteprogramma-omschrijving .mod_websiteprogramma-toelichting {
